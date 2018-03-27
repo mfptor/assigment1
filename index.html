@@ -1,0 +1,114 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gama Academy</title>
+</head>
+
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/validator.css">
+
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <a class="logo_gama">
+        <img src="./images/gama_experience.png" alt="Erro logo Gama">
+      </a>
+      <nav id="nav" class="cabecalho-nav">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#especs">Especificações</a>
+        <a class="nav-link" href="#multimidia">Multimídia</a>
+        <a class="nav-link" href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="container">
+        <h2>Home</h2>
+          <fieldset>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl mauris, imperdiet eu ante id, venenatis cursus nulla. Maecenas risus mauris, dictum non interdum non, congue sed lacus. Suspendisse vulputate vestibulum cursus. Sed non ipsum fringilla, sollicitudin odio ac, venenatis ipsum. Morbi consectetur posuere nisi et faucibus. Nulla non ante tellus. Quisque a dignissim leo. Pellentesque tincidunt arcu vel velit placerat tristique. Pellentesque accumsan nec lacus ut interdum. Sed laoreet, orci ut dictum euismod, ligula enim accumsan felis, ac dapibus elit orci quis tellus. Sed augue tortor, tempus vel porta nec, egestas id sapien. Aliquam erat volutpat. Quisque ultricies at purus non mollis. Praesent convallis, urna at vehicula tincidunt, justo augue hendrerit ligula, et euismod mi purus sed erat. Aenean dignissim purus eleifend nisl euismod venenatis. Aliquam mi turpis, pulvinar eu elit a, tempor posuere ex.</p>   
+          </fieldset>
+      </div>
+    </section>
+
+    <section id="especs">
+      <div class="container">
+        <h2>Especificações</h2>
+        <fieldset>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl mauris, imperdiet eu ante id, venenatis cursus nulla. Maecenas risus mauris, dictum non interdum non, congue sed lacus. Suspendisse vulputate vestibulum cursus. Sed non ipsum fringilla, sollicitudin odio ac, venenatis ipsum. Morbi consectetur posuere nisi et faucibus. Nulla non ante tellus. Quisque a dignissim leo. Pellentesque tincidunt arcu vel velit placerat tristique. Pellentesque accumsan nec lacus ut interdum. Sed laoreet, orci ut dictum euismod, ligula enim accumsan felis, ac dapibus elit orci quis tellus. Sed augue tortor, tempus vel porta nec, egestas id sapien.</p>   
+        </fieldset>
+      </div>
+    </section>
+
+    <section id="multimidia">
+        <figure>
+          <h2>Multimídia</h2>
+          <fieldset>
+            <div class="box">
+              <img src="./images/stacks.png" alt="Erro foto stacks" />
+              <figcaption class="box-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisl mauris, imperdiet eu ante id, venenatis cursus nulla. Maecenas risus mauris, dictum non interdum non, congue sed lacus. Suspendisse vulputate vestibulum cursus. Sed non ipsum fringilla, sollicitudin odio ac, venenatis ipsum. Morbi consectetur posuere nisi et faucibus. Nulla non ante tellus.</p>
+              </figcaption>
+            </div>
+          </fieldset>
+        </figure>
+      </section>
+
+    <section id="contato">
+      <div class="container">
+        <div id="alert"></div>
+        <h2>Contato</h2>
+        <fieldset>
+          <p>Entre com os dados</p>
+          <form id="myFrom" name="myForm" method="POST" onsubmit="enviarDados(event)">
+            <div class="input-group">
+              <input required type="text" 
+                id="empresa" 
+                name="nomeDaEmpresa"
+                minlength="3" 
+                placeholder=" "
+                require>
+              </input>
+              <label for="empresa">Nome da Empresa</label>
+            </div>
+
+            <div class="input-group">
+              <input type="text" 
+                id="nome" 
+                name="nomeCompleto"
+                minlength="8"
+                placeholder=" " 
+                required>
+              </input>
+              <label  for="nome">Nome Completo</label>
+            </div>
+
+            <div class="input-group">
+              <input type="email"
+                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                id="email"
+                name="email" 
+                placeholder=" " 
+                required>
+              </input>
+              <label for="email">E-mail</label>
+            </div>
+
+            <input type="submit" value="Enviar"></input>
+          </form>    
+        </fieldset>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/principal.js">
+  
+  
+  </script>
+
+</body>
+</html>
