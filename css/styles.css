@@ -95,14 +95,7 @@ section {
     max-height: 120px;
     margin: 10px 15px;
   }
-
-
-  #skills .box-text {
-      order: 1;
-      
-  }
  
-
  /* form */
 
  input[type=text], input[type=email] {
